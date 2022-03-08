@@ -1,0 +1,234 @@
+.navbar-brand{
+    font-weight: bolder;
+}
+.nav-link{
+    color: black !important;
+    position: relative;
+}
+.nav-link:hover{
+    color: blue !important;
+}
+.nav-item{
+    margin: 5px;
+}
+.nav-link:hover::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: blue;
+    right: 6px;
+    top: 30px;
+}
+.active{
+    position: relative;
+    color: blue !important;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: blue;
+    right: 5px;
+    top: 30px;
+}
+.first{
+    background: linear-gradient(#4C66EF, rgba(76, 3, 80, 0.712), rgba(60, 2, 63, 0.712));
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 600px;
+}
+.first img{
+    height: 65vh;
+}
+.texts{
+    font-size: 55px;
+}
+.btn-white{
+    background-color: white;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: "50%";
+    position: absolute;
+    background-color: #4C66EF;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: .5em;
+    left: 160px;
+}
+.card-body h3{
+    font-size: 18px;
+}
+.product{
+    background: linear-gradient(rgba(42, 42, 42, 0.7),rgba(26, 25, 25, 0.7)), url("../image/WhatsApp_Image_2021-10-27_at_6.40.35_PM__1_-removebg-preview.png");
+    /* background-size: cover; */
+    background-repeat: repeat;
+    padding: 1rem;
+}
+.fa{
+    font-size: 20px !important;
+}
+.user{
+    background: linear-gradient(rgba(156,183,252, 0.7),rgba(156,183,252, 0.7)), url("../image/user.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* padding: 1rem; */
+}
+.gps{
+    background: linear-gradient(rgba(156,183,252, 0.7),rgba(156,183,252, 0.7)), url("../image/gps.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* padding: 1rem; */
+}
+.live{
+    background: linear-gradient(rgba(156,183,252, 0.7),rgba(156,183,252, 0.7)), url("../image/chat.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* padding: 1rem; */
+}
+.wifi{
+    background: linear-gradient(rgba(156,183,252, 0.7),rgba(156,183,252, 0.7)), url("../image/wifi.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* padding: 1rem; */
+}
+
+
+@media (max-width: 1000px) {
+    .first img{
+        height: 30vh;
+    }
+    .image{
+        position: relative;
+    }
+    .card{
+        width: 100% !important;
+        margin-left: 5px;
+    }
+    .bt{
+        width: 100% !important;
+    }
+    .texts{
+        font-size: 30px;
+    }
+    .image::before{
+        content: "50%";
+        position: absolute;
+        background-color: #4C66EF;
+        color: white;
+        text-align: center;
+        font-size: 13px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: .5em;
+        left: 120px;
+    }
+    .nav-link:hover::after{
+        content: "";
+        position: absolute;
+        width: 9%;
+        height: 3px;
+        background-color: blue;
+        left: 0px;
+        top: 30px;
+    }
+    .active{
+        position: relative;
+        color: blue !important;
+    }
+    .active::after{
+        content: "";
+        position: absolute;
+        width: 9%;
+        height: 3px;
+        background-color: blue;
+        left: 0px;
+        top: 30px;
+    }
+    .secImg{
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .first img{
+        display: none;
+    }
+    .secImg{
+        display: none;
+    }
+    .first h1{
+        font-size: 28px;
+        width: 100% !important;
+        margin-top: 0px !important;
+    }
+    .first p{
+        font-size: 13px;
+    }
+    .first{
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 100px;
+        padding: 1em;
+    }
+    .firstDiv{
+        width: 90% !important;
+    }
+    .d-flex{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .card{
+        width: 100% !important;
+        margin-top: 5px;
+        margin-left: 0px !important;
+    }
+    .nav-link:hover::after{
+        content: "";
+        position: absolute;
+        width: 15%;
+        height: 3px;
+        background-color: blue;
+        left: 0px;
+        top: 30px;
+    }
+    .active{
+        position: relative;
+        color: blue !important;
+    }
+    .active::after{
+        content: "";
+        position: absolute;
+        width: 15%;
+        height: 3px;
+        background-color: blue;
+        left: 0px;
+        top: 30px;
+    }
+    .card-body p{
+        font-size: 15px;
+    }
+    .image::before{
+        content: "50%";
+        position: absolute;
+        background-color: #4C66EF;
+        color: white;
+        text-align: center;
+        font-size: 13px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: .5em;
+        left: 170px;
+    }
+}
